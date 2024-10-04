@@ -1,0 +1,140 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.media-links {
+  display: flex;
+  gap: 15px;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+  background-color: var(--black-1);
+  border-radius: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  align-items: center;
+}
+.nav-links a {
+  padding: 20px 0px 20px 0px;
+  position: relative;
+}
+.nav-links a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--white-1);
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+  display: block;
+}
+.nav-links a:hover {
+  transform: scale(1.05);
+}
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+.nav-contato {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+}
+.nav-contato::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--green-1);
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: -20px;
+}
+.btn-contato {
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: solid 1.5px var(--gray-1);
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.btn-contato:hover {
+  border: solid 1.5px var(--black-5);
+}
+.menu-btn {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .nav-links {
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-contato {
+    text-align: center;
+  }
+  .nav-contato::before {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .nav-contato {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .menu-btn {
+    background-color: var(--black-1);
+    border: none;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    z-index: 300;
+  }
+  .menu-btn::before {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: #fff;
+    box-shadow: 0px 4px #fff, 0px -4px #fff;
+    margin-right: 5px;
+  }
+  .menu-btn.ativo {
+    min-width: 155px;
+    gap: 28px;
+  }
+  .menu-btn.ativo::before {
+    transform: rotate(90deg);
+  }
+  .nav-links {
+    display: none;
+  }
+  .media-links img {
+    width: 30px;
+    height: 30px;
+  }
+  .nav {
+    position: relative;
+  }
+  .nav-links.ativo {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 44px;
+    border-radius: 0px;
+    min-width: 155px;
+  }
+}

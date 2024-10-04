@@ -1,0 +1,23 @@
+.home-intro {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  padding-bottom: 30px;
+}
+.home-intro p {
+  padding: 40px 200px 80px 200px;
+}
+
+@media (max-width: 1400px) {
+  .home-intro p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .home-intro p {
+    padding: 30px;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+  }
+}

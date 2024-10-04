@@ -1,0 +1,48 @@
+.link-interno {
+  padding: 10px 150px 10px 40px;
+  border: solid 1px var(--black-1);
+  border-radius: 50px;
+  background-color: transparent;
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+.link-interno:hover {
+  background-color: var(--black-1);
+  color: var(--white-1);
+}
+.link-interno-2 {
+  padding: 10px 40px 10px 40px;
+  border-radius: 50px;
+  background-color: var(--black-1);
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+.link-interno-2:hover {
+  background-color: var(--gray-1);
+  color: var(--black-1);
+}
+.link-interno-3 {
+  padding: 10px 40px 10px 150px;
+  border: solid 1px var(--white-1);
+  border-radius: 50px;
+  background-color: transparent;
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+.link-interno-3:hover {
+  background-color: var(--white-1);
+  color: var(--black-1);
+}
+@media (max-width: 1400px) {
+  .link-interno {
+    padding: 10px 120px 10px 40px;
+  }
+  .link-interno-3 {
+    padding: 10px 40px 10px 120px;
+  }
+}
+@media (max-width: 700px) {
+  .link-interno {
+    padding: 10px 80px 10px 40px;
+  }
+  .link-interno-2 {
+    padding: 10px 20px;
+  }
+}

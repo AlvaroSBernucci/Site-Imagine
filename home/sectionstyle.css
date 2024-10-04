@@ -1,0 +1,13 @@
+.section-style {
+  height: 40vh;
+  position: relative;
+  margin: 0px 120px;
+  box-sizing: border-box;
+  border-bottom: solid 1.5px var(--gray-1);
+  margin-bottom: 30px;
+}
+@media (max-width: 900px) {
+  .section-style {
+    height: 20vh;
+  }
+}

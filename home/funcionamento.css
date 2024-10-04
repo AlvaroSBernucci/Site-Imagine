@@ -1,0 +1,23 @@
+.funcionamento-bg {
+  background-image: url("../Imagens/Como_Funciona.jpg");
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  display: grid;
+  align-items: center;
+}
+.funcionamento-content {
+  display: grid;
+  justify-items: center;
+  gap: 30px;
+}
+@media (max-width: 900px) {
+  .funcionamento-bg {
+    height: 25vh;
+    border-radius: 0px;
+    background-image: url("../Imagens/Como_Funciona_reponsivo2.png");
+  }
+  section.container-2 {
+    padding: 0px;
+  }
+}
