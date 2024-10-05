@@ -17,7 +17,7 @@
     border-radius: 0px;
     background-image: url("../Imagens/Como_Funciona_reponsivo2.png");
   }
-  section.container-2 {
+  section.container-2.funcionamento {
     padding: 0px;
   }
 }

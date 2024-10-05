@@ -1,0 +1,127 @@
+.historias {
+  padding-left: 120px;
+  position: relative;
+  display: grid;
+}
+.slide-wrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+}
+.slide {
+  display: flex;
+  flex-shrink: 0;
+}
+.slide li {
+  max-width: 900px;
+  height: 700px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 100px;
+  margin: 0px 15px;
+  position: relative;
+}
+.slide li img {
+  height: 700px;
+  object-fit: cover;
+}
+.historias-sobre {
+  max-width: 27ch;
+  padding-top: 450px;
+}
+.historias-title {
+  max-width: 20ch;
+}
+.slide-content {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  display: grid;
+  justify-items: start;
+  gap: 40px;
+}
+.slide-link {
+  background-color: var(--white-1);
+  padding: 20px 120px 20px 40px;
+  border-radius: 50px;
+}
+.slide-content span {
+  max-width: 25ch;
+}
+.slide-txt {
+  padding-left: 60px;
+}
+
+@media (max-width: 1400px) {
+  .historias-sobre {
+    padding-top: 350px;
+  }
+  .slide li {
+    height: 500px;
+    max-width: 600px;
+  }
+  .slide-wrapper {
+    left: 45%;
+  }
+  .slide-link {
+    padding: 10px 60px 10px 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .slide-wrapper {
+    position: static;
+    margin-top: 20px;
+  }
+  .historias-sobre {
+    padding-top: 60px;
+  }
+  .slide-link {
+    font-size: 2rem;
+    padding: 10px 80px 10px 20px;
+  }
+  .slide li {
+    height: 300px;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  .slide-content {
+    gap: 20px;
+  }
+  .historias {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .historias {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .slide li {
+    max-width: 400px;
+  }
+  .slide-link {
+    font-size: 1.5rem;
+    padding: 10px 50px 10px 20px;
+  }
+  .slide-txt {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 500px) {
+  .historias-title {
+    font-size: 2rem;
+  }
+  .slide li {
+    max-width: 300px;
+    height: 200px;
+  }
+  .slide-link {
+    font-size: 1.25rem;
+    padding: 10px 30px 10px 20px;
+  }
+  .slide-txt {
+    font-size: 1rem;
+  }
+}
