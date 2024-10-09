@@ -16,6 +16,12 @@
   flex-direction: column;
   gap: 50px;
 }
+.motivo-2 :nth-child(1) {
+  max-width: 25ch;
+}
+.motivo-2 :nth-child(2) {
+  max-width: 40ch;
+}
 @media (max-width: 1200px) {
   .home-motivo {
     padding-top: 60px;

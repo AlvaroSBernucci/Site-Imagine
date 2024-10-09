@@ -1,0 +1,12 @@
+.clientes-section {
+  padding: 50px 0px;
+}
+.clientes-lista {
+  display: flex;
+  overflow: hidden;
+}
+.clientes-lista li {
+  max-width: 200px;
+  flex-shrink: 0;
+  overflow: hidden;
+}

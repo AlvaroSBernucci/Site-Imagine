@@ -1,0 +1,31 @@
+.home-contato {
+  padding: 40px 40px 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  position: relative;
+}
+.home-contato img {
+  height: 50vh;
+  border-radius: 0 50% 50% 0;
+  object-fit: cover;
+}
+.contato-lista {
+  padding-top: 40px;
+}
+.contato-lista li {
+  padding-top: 15px;
+}
+@media (max-width: 700px) {
+  .home-contato {
+    grid-template-columns: 1fr;
+    padding: 0px;
+    text-align: center;
+  }
+  .contato-div {
+    grid-row: 1;
+  }
+  .home-contato img {
+    width: 70%;
+  }
+}

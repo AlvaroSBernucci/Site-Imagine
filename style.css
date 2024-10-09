@@ -9,3 +9,8 @@
 @import "./home/funcionamento.css";
 @import "./home/historias.css";
 @import "./home/motivo.css";
+@import "./home/accordion.css";
+@import "./home/clientes.css";
+@import "./home/showcase.css";
+@import "./home/contato.css";
+@import "./footer.css";

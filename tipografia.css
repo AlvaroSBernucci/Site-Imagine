@@ -38,6 +38,18 @@
   font: 700 10rem/1.2 "Cinzel", sans-serif;
   letter-spacing: 0;
 }
+.font-3-1 {
+  font: 500 3rem/1.2 "Montserrat", sans-serif;
+  letter-spacing: 0;
+}
+.font-3-2 {
+  font: 400 2rem/1.2 "Montserrat", sans-serif;
+  letter-spacing: 0;
+}
+.font-3-3 {
+  font: 400 1.5rem/1.2 "Montserrat", sans-serif;
+  letter-spacing: 0;
+}
 @media (max-width: 1400px) {
   .font-2-10 {
     font-size: 6.5rem;
