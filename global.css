@@ -26,6 +26,23 @@ body {
   margin: 0px auto;
   padding: 40px 120px;
 }
+section[data-show="show-up"] {
+  opacity: 0;
+}
+section[data-show="show-up"].ativo {
+  display: block;
+  animation: show-up 1s forwards;
+}
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 @media (max-width: 900px) {
   .container-2 {
     padding-right: 40px;
